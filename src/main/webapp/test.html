@@ -1,179 +1,71 @@
 <!doctype html>
-<html>
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <title>BoardGames</title>
+    <link rel="stylesheet" href="CSS/Maincss.css" type="text/css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5ac905d68c.js" crossorigin="anonymous"></script>
 </head>
-<style>
-body {font-family: Arial, Helvetica, sans-serif; color: darkolivegreen;}
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-
-/* Center the image and position the close button */
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-  position: relative;
-}
-
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
-.container {
-  padding: 16px;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
-}
-  
-@keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-	
-	
-}
-
-	.roundedImage{
-    overflow:hidden;
-    -webkit-border-radius:50px;
-    -moz-border-radius:50px;
-    border-radius:50px;
-    width:90px;
-    height:90px;
-} </style>
-	
-<body style="background-image: url('dreamw-site/1140-board-games.imgcache.rev70b206bbad9db19b62eabafce2dbd0d3.jpg')">
-	<h1 style="background-color: aliceblue" align="center">Welcome to BoardGames.com</h1>
-	
-	<div style="background-color: aliceblue; margin: 100px 100px">
+<body>
+	 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <i class ="fa fa-dice"></i>
+            BoardGames
+        </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav mr-auto">
+                 <li class="nav-item active">
+                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                 </li>
+                 <li class="nav-item">
+                     <a class="nav-link" href="https://discord.gg/2TwkHcs">
+                         <i class="fab fa-discord"></i>
+                         Discord
+                         <span class="sr-only">(current)</span>
+                     </a>
+                 </li>
+                 <form class="form-check-inline">
+                 <button onclick="document.getElementById('id01').style.display='block'" s type="button" class="btn btn-success btn-lg active btn-sm" type="submit">Login</button>
+                 </form>
+             </ul>
+         </div>
+    </nav>
+	<div class="card" style="background-color: aliceblue; margin: 100px 100px">
+        <div class="card-body">
 		<h3 style="color: darkolivegreen" align="center">Bienvenue sur BoardGames</h3>
-		<p align="center" style="color: darkolivegreen;">Rencontrez les fans de jeux de sociétés les plus chaud de votre région !!!</p> 
-		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; margin: auto 480px; background-color: darkolivegreen; padding: 20px 30px;">Login</button>
-		<a href="https://discord.gg/2TwkHcs" target="_blank"><img class="roundedImage" src="dreamw-site/discord2.jpeg" alt="Discord"/></a>
+		<p align="center" style="color: darkolivegreen;">Rencontrez les fans de jeux de sociétés les plus chaud de votre région !!!</p>
 	</div>
-	
+    </div>
 	<!-- The Modal -->
 <div id="id01" class="modal" >
   <span onclick="document.getElementById('id01').style.display='none'" 
 class="close" title="Close Modal">&times;</span>
 
   <!-- Modal Content -->
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="imgcontainer">
-      <img src="dreamw-site/images.png" alt="Avatar" class="avatar">
-    </div>
+  <form class="modal-content animate" action="#">
+    <div class="form-group">
+      <label for="Username"><b>Username</b></label>
+      <input type="email" class="form-control" id="Username" placeholder="Enter Username" required>
 
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="unam e" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <label for="Password"><b>Password</b></label>
+      <input type="password" class="form-control" id="Password" placeholder="Enter Password" required>
 
       <button type="submit">Connexion</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
+        <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="Checked" name="remember">
+            <label class="form-check-label" for="Checked">Remember me</label>
     </div>
-
     <div class="container" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
       <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
     </div>
   </form>
 </div>

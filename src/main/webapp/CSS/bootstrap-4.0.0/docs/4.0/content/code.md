@@ -32,7 +32,7 @@ For indicating variables use the `<var>` tag.
 <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
 {% endexample %}
 
-## User input
+## Users.User input
 
 Use the `<kbd>` to indicate input that is typically entered via keyboard.
 

@@ -1,3 +1,7 @@
+package Sessions;
+
+import Users.User;
+
 import java.util.Date;
 import java.util.List;
 
@@ -19,4 +23,23 @@ public class Session {
         this.hF = hF;
     }
 
+    public String getName() {
+        return this.name;
+    }
+
+    public Date getDate() {
+        return this.date;
+    }
+
+    public String gethD() {
+        return this.hD;
+    }
+
+    public String gethF() {
+        return this.hF;
+    }
+
+    public String getGetName() {
+        return name;
+    }
 }

@@ -13,6 +13,10 @@ repositories {
 }
 
 dependencies {
+    compile group: 'org.apache.taglibs', name: 'taglibs-standard-impl', version: '1.2.5'
+    compile group: 'org.apache.taglibs', name: 'taglibs-standard-jstlel', version: '1.2.5'
+    compile group: 'org.apache.taglibs', name: 'taglibs-standard-spec', version: '1.2.5'
+    compile group: 'com.sun.mail', name: 'javax.mail', version: '1.6.2'
     compile 'javax.servlet:javax.servlet-api:3.1.0'
     compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.9'
     compile 'com.google.firebase:firebase-admin:6.11.0'

@@ -5,19 +5,68 @@
          version="4.0">
 
         <servlet>
+            <servlet-name>Init</servlet-name>
+            <servlet-class>Servlets.InitServlet</servlet-class>
+            <load-on-startup>1</load-on-startup>
+        </servlet>
+
+        <servlet>
             <servlet-name>Login</servlet-name>
-            <servlet-class>Login</servlet-class>
+            <servlet-class>Users.Login</servlet-class>
         </servlet>
     
         <servlet>
             <servlet-name>creationUser</servlet-name>
-            <servlet-class>creationUser</servlet-class>
+            <servlet-class>Users.creationUser</servlet-class>
         </servlet>
     
         <servlet>
             <servlet-name>CreateSession</servlet-name>
-            <servlet-class>CreateSession</servlet-class>
+            <servlet-class>Sessions.CreateSession</servlet-class>
         </servlet>
+    
+        <servlet>
+            <servlet-name>changeDefPsswd</servlet-name>
+            <servlet-class>Users.changeDefPsswd</servlet-class>
+        </servlet>
+    
+        <servlet>
+            <servlet-name>DeleteSession</servlet-name>
+            <servlet-class>Sessions.ServletDeleteSession</servlet-class>
+            <init-param>
+                <param-name>name</param-name>
+                <param-value></param-value>
+            </init-param>
+        </servlet>
+        <servlet>
+            <servlet-name>ModifySession</servlet-name>
+            <servlet-class>Sessions.ModifySession</servlet-class>
+            <init-param>
+                <param-name>name</param-name>
+                <param-value></param-value>
+            </init-param>
+        </servlet>
+        <servlet>
+            <servlet-name>DeleteUser</servlet-name>
+            <servlet-class>Users.DeleteUser</servlet-class>
+        </servlet>
+        <servlet>
+            <servlet-name>ModifyUser</servlet-name>
+            <servlet-class>Users.ModifyUser</servlet-class>
+            <init-param>
+                <param-name>usr</param-name>
+                <param-value></param-value>
+            </init-param>
+        </servlet>
+        <servlet>
+            <servlet-name>Logout</servlet-name>
+            <servlet-class>Servlets.Logout</servlet-class>
+        </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Init</servlet-name>
+        <url-pattern>/Init</url-pattern>
+    </servlet-mapping>
     
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
@@ -33,6 +82,32 @@
         <servlet-name>CreateSession</servlet-name>
         <url-pattern>/CreateSession</url-pattern>
     </servlet-mapping>
-
+    
+    <servlet-mapping>
+        <servlet-name>changeDefPsswd</servlet-name>
+        <url-pattern>/changeDefPsswd</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>DeleteSession</servlet-name>
+        <url-pattern>/DeleteSession</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ModifySession</servlet-name>
+        <url-pattern>/ModifySession</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteUser</servlet-name>
+        <url-pattern>/DeleteUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ModifyUser</servlet-name>
+        <url-pattern>/ModifyUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+    
 
 </web-app>
